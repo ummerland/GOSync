@@ -7,7 +7,7 @@ A utility to sync contacts from Google Mail to Outlook.
 
 ## Usage
 
-- Download from Releases.
+- Download from [Releases](https://github.com/ummerland/GOSync/releases/tag/FirstRelease).
 - Simply follow the numbered buttons on the form.
 
 ## Build
