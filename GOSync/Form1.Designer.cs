@@ -65,7 +65,7 @@
             this.btnOpenCsv.Location = new System.Drawing.Point(94, 41);
             this.btnOpenCsv.Name = "btnOpenCsv";
             this.btnOpenCsv.Size = new System.Drawing.Size(258, 23);
-            this.btnOpenCsv.TabIndex = 0;
+            this.btnOpenCsv.TabIndex = 1;
             this.btnOpenCsv.Text = "2.   Read Contacts CSV Data...";
             this.btnOpenCsv.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOpenCsv.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@
             this.btnWriteContacts.Location = new System.Drawing.Point(94, 70);
             this.btnWriteContacts.Name = "btnWriteContacts";
             this.btnWriteContacts.Size = new System.Drawing.Size(258, 23);
-            this.btnWriteContacts.TabIndex = 1;
+            this.btnWriteContacts.TabIndex = 2;
             this.btnWriteContacts.Text = "3a. Write Selected Item To Outlook Contacts";
             this.btnWriteContacts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnWriteContacts.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@
             this.LV.Location = new System.Drawing.Point(12, 157);
             this.LV.Name = "LV";
             this.LV.Size = new System.Drawing.Size(1040, 270);
-            this.LV.TabIndex = 2;
+            this.LV.TabIndex = 7;
             this.LV.UseCompatibleStateImageBehavior = false;
             this.LV.View = System.Windows.Forms.View.Details;
             // 
@@ -200,7 +200,7 @@
             this.btnOpenGoogleContacts.Location = new System.Drawing.Point(94, 12);
             this.btnOpenGoogleContacts.Name = "btnOpenGoogleContacts";
             this.btnOpenGoogleContacts.Size = new System.Drawing.Size(258, 23);
-            this.btnOpenGoogleContacts.TabIndex = 6;
+            this.btnOpenGoogleContacts.TabIndex = 0;
             this.btnOpenGoogleContacts.Text = "1.   Export Contacts CSV in Google Mail";
             this.btnOpenGoogleContacts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOpenGoogleContacts.UseVisualStyleBackColor = true;
@@ -231,7 +231,7 @@
             this.button2.Location = new System.Drawing.Point(94, 128);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(258, 23);
-            this.button2.TabIndex = 9;
+            this.button2.TabIndex = 4;
             this.button2.Text = "4.   Check Contacts in Outlook";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
@@ -253,7 +253,7 @@
             this.llGitHubIssues.Location = new System.Drawing.Point(831, 132);
             this.llGitHubIssues.Name = "llGitHubIssues";
             this.llGitHubIssues.Size = new System.Drawing.Size(79, 15);
-            this.llGitHubIssues.TabIndex = 11;
+            this.llGitHubIssues.TabIndex = 6;
             this.llGitHubIssues.TabStop = true;
             this.llGitHubIssues.Text = "GitHub Issues";
             this.llGitHubIssues.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llGitHubIssues_LinkClicked);
@@ -264,7 +264,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(978, 16);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(32, 15);
-            this.linkLabel1.TabIndex = 12;
+            this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Help";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
