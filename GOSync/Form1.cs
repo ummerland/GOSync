@@ -267,5 +267,23 @@ namespace GOSync
             var gchelp = new GcHelpform();
             gchelp.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Microsoft.Win32.RegistryKey? key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("Software\\microsoft\\windows\\currentversion\\app paths\\OUTLOOK.EXE");
+            if (key != null)
+            {
+                string? path = key.GetValue("Path")?.ToString();
+                if (path != null)
+                    System.Diagnostics.Process.Start($"{path}OUTLOOK.EXE");
+                else
+                    MessageBox.Show("Outlook was not found on this computer. Please check installation.", "Outlook not found", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void llGitHubIssues_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/ummerland/GOSync/issues");
+        }
     }
 }

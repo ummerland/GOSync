@@ -53,6 +53,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.llGitHubIssues = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -100,7 +102,7 @@
             this.LV.FullRowSelect = true;
             this.LV.Location = new System.Drawing.Point(12, 157);
             this.LV.Name = "LV";
-            this.LV.Size = new System.Drawing.Size(1040, 281);
+            this.LV.Size = new System.Drawing.Size(1040, 270);
             this.LV.TabIndex = 2;
             this.LV.UseCompatibleStateImageBehavior = false;
             this.LV.View = System.Windows.Forms.View.Details;
@@ -233,6 +235,7 @@
             this.button2.Text = "4.   Check Contacts in Outlook";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -253,6 +256,7 @@
             this.llGitHubIssues.TabIndex = 11;
             this.llGitHubIssues.TabStop = true;
             this.llGitHubIssues.Text = "GitHub Issues";
+            this.llGitHubIssues.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llGitHubIssues_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -265,11 +269,39 @@
             this.linkLabel1.Text = "Help";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(12, 432);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(1012, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "The Google Mail \'M\' Logo is a tragemark of Google LLC. The Outlook \'O\' Logo is a " +
+    "trademark of the Microsoft Corporation. This software is provided \'as-is\' withou" +
+    "t liability or warranty of any kind.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(36, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(23, 30);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "↕";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 450);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.llGitHubIssues);
             this.Controls.Add(this.label3);
@@ -277,8 +309,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOpenGoogleContacts);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnWriteAll);
             this.Controls.Add(this.LV);
             this.Controls.Add(this.btnWriteContacts);
@@ -320,5 +350,7 @@
         private Label label3;
         private LinkLabel llGitHubIssues;
         private LinkLabel linkLabel1;
+        private Label label4;
+        private Label label5;
     }
 }
