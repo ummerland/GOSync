@@ -7,8 +7,8 @@ A utility to sync contacts from Google Mail to Outlook.
 
 ## Usage
 
-Download from Releases.
-Simply follow the numbered buttons on the form.
+- Download from Releases.
+- Simply follow the numbered buttons on the form.
 
 ## Build
 
