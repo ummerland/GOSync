@@ -259,7 +259,7 @@ namespace GOSync
 
         private void btnOpenGoogleContacts_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://contacts.google.com/");
+            System.Diagnostics.Process.Start("rundll32", "url.dll,FileProtocolHandler https://contacts.google.com/");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -283,7 +283,7 @@ namespace GOSync
 
         private void llGitHubIssues_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/ummerland/GOSync/issues");
+            System.Diagnostics.Process.Start("rundll32", "url.dll,FileProtocolHandler https://github.com/ummerland/GOSync/issues");
         }
     }
 }
